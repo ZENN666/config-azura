@@ -1,0 +1,14 @@
+tunnel: c878810f-5d30-4774-bf5c-53f36b36992d
+credentials-file: /root/.cloudflared/c878810f-5d30-4774-bf5c-53f36b36992d.json
+
+ingress:
+  - hostname: radio.sebayu.my.id
+    service: http://flask_app:5000   # flask
+  - hostname: admin.sebayu.my.id
+    service: http://azuracast:80     # dashboard admin 
+  - service: http_status:404
+
+
+
+
+
